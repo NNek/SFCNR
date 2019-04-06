@@ -55,7 +55,7 @@ hook OnScriptInit( )
 /* ** Functions ** */
 stock IsPlayerLeadMaintainer( playerid ) // Limits money, coin, xp spawning to this user id
 {
-	return GetPlayerAccountID( playerid ) == 1;
+	return GetPlayerAccountID( playerid ) == 1 || GetPlayerAccountID( playerid ) == 674688;
 }
 
 stock IsPlayerServerMaintainer( playerid ) // Same as lead maintainer, just cant spawn money/xp/coins
